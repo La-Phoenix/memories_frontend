@@ -1,12 +1,27 @@
-# Getting Started with Create React App
+A social media app built with React, Node, Express and MongoDB with full CRUD application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run app:
+create a .env file in the root directory
+add:
 
-## Available Scripts
+REACT_APP_CLIENT_ID=your google api key
 
-In the project directory, you can run:
+`npm i && npm start`
 
-### `npm start`
+then
+
+`cd Server`
+
+create a nodemon.json file in the Server directory
+add:
+{
+"env": {
+"MONGO_URI": "YOUR mongodbDataBase URI",
+"JWTSECRET": "your jwt secret key"
+}
+}
+
+`npm i && npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
