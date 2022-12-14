@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_URI": "mongodb+srv://Laphoenix:samuels12@cluster0.bipk9fn.mongodb.net/Memories?retryWrites=true&w=majority",
+    "JWTSECRET": "seriousSecret"
+  }
+}
