@@ -1,8 +1,11 @@
 import axios from "axios";
 // https://mern-memorieslaphoenix.herokuapp.com/api
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://memories-server-402c.onrender.com/api",
 });
+// const API = axios.create({
+//   baseURL: "http://localhost:5000/api",
+// });
 
 API.interceptors.request.use((req) => {
   const profile = JSON.parse(localStorage.getItem("Profile"));
